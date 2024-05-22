@@ -1,5 +1,23 @@
 version: "3.9"
 services:
+  frontend:
+    container_name: frontend_container
+    build: ./frontend
+    ports:
+      - '3000:3000'
+    restart: unless-stopped
+    networks:
+      - default
+
+  backend:
+    container_name: backend_container
+    build: ./backend
+    ports:
+      - '4000:4000'
+    restart: unless-stopped
+    networks:
+      - default
+
   postgres:
     container_name: postgres_container
     image: postgres:16
@@ -21,7 +39,7 @@ services:
       start_period: 10s
     restart: unless-stopped
     networks:
-      - postgres
+      - default
 
   pgadmin:
     container_name: pgadmin_container
@@ -36,12 +54,12 @@ services:
       - "5050:80"
     restart: unless-stopped
     networks:
-      - postgres
+      - default
 
 volumes:
   db-data:
   pgadmin-data:
 
 networks:
-  postgres:
+  default:
     driver: bridge
