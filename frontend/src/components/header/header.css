@@ -1,0 +1,182 @@
+/* header */
+.page-header {
+  margin-bottom: 50px;
+}
+
+/* header-info */
+.header-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+  margin-top: 20px;
+  margin-bottom: 17px;
+}
+
+.logo {
+  margin-right: 40px;
+}
+
+.address-list {
+  margin: 0;
+  margin-right: 211px;
+  padding: 0;
+  font-size: 14px;
+  list-style: none;
+}
+
+.address-item a {
+  color: #1C1C1C;
+  text-decoration: none;
+}
+
+.address-item {
+  list-style-image: url("./img/label-green.svg");
+  margin-bottom: 9px;
+}
+
+.address-item:nth-child(2) {
+  list-style-image: url("./img/label-blue.svg");
+}
+
+.address-item:nth-child(3) {
+  list-style-image: url("./img/label-blue.svg");
+}
+
+.address-item:last-child {
+  list-style-image: url("./img/label-red.svg");
+  margin-bottom: 0;
+}
+
+.address-item a:hover,
+.address-item a:focus {
+  opacity: 0.6;
+  text-decoration: underline;
+}
+
+.address-item a:active {
+  opacity: 1;
+  color: #002147;
+}
+
+.phone-list {
+  margin: 0;
+  margin-left: auto;
+  padding: 0;
+  list-style: none;
+}
+
+.phone-item {
+  margin-bottom: 8px;
+}
+
+.phone-item:last-child {
+  margin-bottom: 0;
+}
+
+.phone-item a {
+  margin-bottom: 5px;
+  font-size: 20px;
+  font-weight: 700;
+  color: #0E56A8;
+  text-decoration: none;
+}
+
+.phone-item p {
+  text-align: center;
+  margin: 0;
+  font-size: 12px;
+}
+
+.phone-item a:hover,
+.phone-item a:focus {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.phone-item a:active {
+  opacity: 0.4;
+}
+
+/* nav */
+.app-nav {
+  padding: 5px 0;
+  background-color: #D7E8F2;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.nav-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.nav-list {
+  display: flex;
+  gap: 25px;
+  margin: 0;
+  margin-right: 110px;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-item a {
+  font-weight: 600;
+  color: #1C1C1C;
+  text-decoration: none;
+}
+
+.nav-item a:hover,
+.nav-item a:focus {
+  opacity: 0.6;
+  text-decoration: underline;
+}
+
+.nav-item a:active {
+  opacity: 1;
+  color: #002147;
+}
+
+.reception-btn {
+  width: 220px;
+  padding: 9px 0 10px 0;
+  font-size: 18px;
+  background-color: #50C060;
+}
+
+.reception-btn:hover,
+.reception-btn:focus {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.reception-btn:active {
+  opacity: 1;
+  background-color: #20A040;
+}
+
+.signin {
+  display: flex;
+  align-items: center;
+  margin-left: auto;
+  font-size: 14px;
+  font-weight: 600;
+  color: #1C1C1C;
+}
+
+.signin:hover,
+.signin:focus {
+  opacity: 0.8;
+}
+
+.signin:active {
+  opacity: 0.4;
+}
+
+.signin img {
+  margin-left: 10px;
+  border-radius: 50%;
+}
