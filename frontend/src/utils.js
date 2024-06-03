@@ -9,6 +9,14 @@ const AppRoute = {
   SERVICES: "services"
 }
 
+const ModalRoute = {
+  NONE: "none",
+  SIGNUP: "signup",
+  SIGNIN: "signin",
+  BID: "bid"
+}
+
 export {
-  AppRoute
+  AppRoute,
+  ModalRoute
 }

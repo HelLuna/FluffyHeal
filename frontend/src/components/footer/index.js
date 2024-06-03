@@ -10,43 +10,43 @@ function Footer() {
       <div className="footer-container">
         <div className="footer-column">
           <img src={logo} width="100" height="102" alt="Логотип FluffyHeal" />
-          <p className="policy"><a href="#">Политика конфиденциальности</a></p>
+          <p className="policy"><a href="/">Политика конфиденциальности</a></p>
           <p className="copyright">FluffyHeal ©2024 Все права защищены</p>
         </div>
 
         <ul className="footer-nav-list">
           <li className="footer-nav-item">
-            <a href="#">Услуги</a>
+            <a href="/">Услуги</a>
           </li>
           <li className="footer-nav-item">
-            <a href="#">Прайс-лист</a>
+            <a href="/">Прайс-лист</a>
           </li>
           <li className="footer-nav-item">
-            <a href="#">Акции</a>
+            <a href="/">Акции</a>
           </li>
           <li className="footer-nav-item">
-            <a href="#">Команда</a>
+            <a href="/">Команда</a>
           </li>
           <li className="footer-nav-item">
-            <a href="#">Вакансии</a>
+            <a href="/">Вакансии</a>
           </li>
         </ul>
 
         <ul className="footer-nav-list">
           <li className="footer-nav-item">
-            <a href="#">Блог</a>
+            <a href="/">Блог</a>
           </li>
           <li className="footer-nav-item">
-            <a href="#">Расшифровать анализы</a>
+            <a href="/">Расшифровать анализы</a>
           </li>
           <li className="footer-nav-item">
-            <a href="#">Галерея</a>
+            <a href="/">Галерея</a>
           </li>
           <li className="footer-nav-item">
-            <a href="#">Отзывы</a>
+            <a href="/">Отзывы</a>
           </li>
           <li className="footer-nav-item">
-            <a href="#">Контакты</a>
+            <a href="/">Контакты</a>
           </li>
         </ul>
 
@@ -54,17 +54,17 @@ function Footer() {
           <p className="social-text">Мы в соц. сетях:</p>
           <ul className="social-list">
             <li className="social-item">
-              <a href="#">
+              <a href="/">
                 <img src={vk} width="25" height="25" alt="ВКонтакте" />
               </a>
             </li>
             <li className="social-item">
-              <a href="#">
+              <a href="/">
                 <img src={tg} width="25" height="25" alt="Телеграм" />
               </a>
             </li>
             <li className="social-item">
-              <a href="#">
+              <a href="/">
                 <img src={inst} width="25" height="25" alt="Instagram" />
               </a>
             </li>

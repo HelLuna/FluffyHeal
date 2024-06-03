@@ -1,0 +1,284 @@
+.modal {
+  position: fixed;
+  top: 0;
+  height: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.main-form {
+  position: relative;
+  width: 440px;
+  padding: 20px 30px;
+  border: 1px solid #002147;
+  border-radius: 10px;
+  background-color: #FFFFFF;
+}
+
+.form-title {
+  margin: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.close-form-btn {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 22px;
+  height: 22px;
+  padding: 0;
+  text-indent: -9999em;
+  text-transform: uppercase;
+  background-image: url("./img/close-form.svg");
+  background-repeat: no-repeat;
+  background-size: 20px 20px;
+  background-position: center;
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: none;
+}
+
+.close-form-btn:hover,
+.close-form-btn:focus {
+  opacity: 0.6;
+}
+
+.close-form-btn:active {
+  opacity: 0.4;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin-bottom: 20px;
+}
+
+.main-form label {
+  font-weight: 600;
+}
+
+.main-form input {
+  width: 180px;
+  height: 16px;
+  padding: 12px 10px;
+  font: inherit;
+  color: inherit;
+  font-size: 14px;
+  border: 1px solid #002147;
+  border-radius: 10px;
+  background-color: #F7F7F7;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.main-form input::placeholder {
+  color: #888888;
+}
+
+.input-btn {
+  position: relative;
+  width: 200px;
+}
+
+.input-btn input {
+  width: 150px;
+  padding-right: 40px;
+}
+
+.hide-password {
+  position: absolute;
+  right: 10px;
+  top: 11px;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  text-indent: -9999em;
+  text-transform: uppercase;
+  background-image: url("./img/eye-close.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  box-shadow: none;
+  border-radius: none;
+}
+
+input[type=text]+.hide-password {
+  background-image: url("./img/eye-open.svg");
+}
+
+.hide-password:hover,
+.hide-password:focus {
+  opacity: 0.6;
+}
+
+.hide-password:active {
+  opacity: 0.4;
+}
+
+.form-submit {
+  width: 80px;
+  height: 30px;
+  font-size: 16px;
+  font-weight: 600;
+  background-color: #50C060;
+}
+
+.form-submit:hover,
+.form-submit:focus {
+  opacity: 0.8;
+  text-decoration: underline;
+}
+
+.form-submit:active {
+  opacity: 1;
+  background-color: #20A040;
+}
+
+.additional-btns {
+  width: 160px;
+  text-align: right;
+}
+
+.form-link {
+  display: block;
+  margin-bottom: 9px;
+  font-size: 14px;
+  color: #888888;
+}
+
+.form-link:last-child {
+  margin-bottom: 0;
+}
+
+.form-link:hover,
+.form-link:focus {
+  opacity: 0.6;
+}
+
+.form-link:active {
+  opacity: 1;
+  color: #1C1C1C;
+}
+
+/*Форма регистрации*/
+.form-full-name {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.long-input {
+  align-items: center;
+}
+
+.long-input input {
+  width: 323px;
+}
+
+.form-field input[type=file] {
+  position: relative;
+  width: 150px;
+  padding-right: 40px;
+}
+
+.form-field input[type=file]::file-selector-button {
+  cursor: pointer;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  text-indent: -9999em;
+  text-transform: uppercase;
+  background-image: url("./img/clip.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: transparent;
+  box-shadow: none;
+  border: none;
+  border-radius: none;
+}
+
+.form-field input[type=file]::file-selector-button:hover,
+.form-field input[type=file]::file-selector-button:focus {
+  opacity: 0.6;
+}
+
+.form-field input[type=file]::file-selector-button:active {
+  opacity: 0.4;
+}
+
+.form-row .end-field {
+  margin-bottom: 15px;
+}
+
+.main-form .prompt {
+  margin: 0;
+  margin-bottom: 10px;
+  text-align: right;
+  font-weight: 600;
+  color: #888888;
+}
+
+.main-form .user-policy {
+  margin: 0;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.main-form .user-policy a {
+  color: #0E56A8;
+}
+
+.main-form .user-policy a:hover,
+.main-form .user-policy a:focus {
+  opacity: 0.6;
+}
+
+.main-form .user-policy a:active {
+  opacity: 0.4;
+}
+
+.form-registration-btn {
+  margin: 0 auto;
+}
+
+/*Форма записи на приём*/
+.main-form textarea {
+  width: 420px;
+  height: 105px;
+  resize: none;
+  padding: 10px;
+  font: inherit;
+  font-size: 14px;
+  color: inherit;
+  border: 1px solid #002147;
+  border-radius: 10px;
+  background-color: #F7F7F7;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.2);
+}
+
+.long-input-date {
+  margin-bottom: 10px;
+}
+
+.long-input-date input {
+  width: 420px;
+}
+
+.form-bid-btn {
+  margin: 0 auto;
+  width: 140px;
+}

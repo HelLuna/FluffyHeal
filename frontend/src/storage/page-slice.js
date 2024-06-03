@@ -1,21 +1,23 @@
 import { createSlice } from '@reduxjs/toolkit';
-import { AppRoute } from '../utils';
+import { AppRoute, ModalRoute } from '../utils';
 
 const pageSlice = createSlice({
   name: 'pages',
   initialState: {
-    page: AppRoute.INITIAL
+    page: AppRoute.INITIAL,
+    modal: ModalRoute.NONE
   },
   reducers: {
     setPage(state, action) {
       state.page = action.payload.page;
     },
 
-    signIn() { },
-    signUp() { }
+    setModal(state, action) {
+      state.modal = action.payload.modal;
+    },
   }
 });
 
-export const { setPage, signIn, signUp } = pageSlice.actions;
+export const { setPage, setModal } = pageSlice.actions;
 
 export default pageSlice.reducer;

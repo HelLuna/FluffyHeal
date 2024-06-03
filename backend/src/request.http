@@ -1,0 +1,2 @@
+GET https://cloud-api.yandex.net/v1/disk/resources?path=disk%3A%2FTest2%2Favatar.jpg HTTP/1.1
+Authorization: OAuth y0_AgAAAAA_S9PdAAvOoQAAAAEFN8CAAABh2nPFUHpD_ZdkopZsHbEam48tVA
